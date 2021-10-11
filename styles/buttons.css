@@ -1,0 +1,15 @@
+.btn-small {
+  @apply px-4 py-2;
+}
+
+.btn-large {
+  @apply px-6 py-4;
+}
+
+.btn-primary {
+  @apply cursor-pointer rounded-xl bg-blue-500 text-white p-2;
+}
+
+.btn-primary:disabled {
+  @apply bg-gray-300 cursor-default;
+}

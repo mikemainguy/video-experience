@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "prettier",
+    "eslint-plugin-import"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": 0,
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "react"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 80,
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "semi": true,
+        "useTabs": false,
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}

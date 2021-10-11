@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'utilities';
+@import 'typography';
+@import 'forms';
+@import 'buttons';

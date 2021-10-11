@@ -1,0 +1,35 @@
+.heading-1 {
+  @apply text-5xl text-blue-500;
+}
+
+.heading-2 {
+  @apply text-4xl text-blue-500;
+}
+
+.heading-3 {
+  @apply text-3xl text-blue-500;
+}
+
+.heading-4 {
+  @apply text-2xl text-blue-500;
+}
+
+.heading-5 {
+  @apply text-xl text-blue-500;
+}
+
+.heading-6 {
+  @apply text-lg text-blue-500;
+}
+
+.paragraph {
+  @apply text-base text-black;
+}
+
+.link {
+  
+}
+
+.label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
