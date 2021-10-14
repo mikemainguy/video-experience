@@ -11,19 +11,6 @@ First, create a .env file in root of project:
  
 You can create demo signalwire environments for local testing otherwise obtain shared dev env values from project team
 
-###Example .env file
-```bash
-PROJECT_ID=0c843c46-7e69-4fb4-9505-373d5add8fe3
-API_KEY=PT9be76275eb410d0e8914ce87f013647c302a6044e9f77aad
-SPACE=https://experience2022.signalwire.com/api/video
-AUTH0_SECRET=a1deb3c82e4ec876959a57f4ea51a543067e8051a82eb0df43d052594670bd29
-AUTH0_BASE_URL=http://localhost:3000
-AUTH0_ISSUER_BASE_URL=https://fandog.us.auth0.com
-AUTH0_CLIENT_ID=qUbFlopxiIrHpCKPkg8ZR8wGJVzF4gPg
-AUTH0_CLIENT_SECRET=EeLn_KjC217oEGU_o-_6y-L9nUoUM-a5bve29UpRE85rO99iWIAZO40srMNeNSxr
-```
-
-
 ```bash
 npm install
 npm run dev
