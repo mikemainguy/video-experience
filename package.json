@@ -9,7 +9,8 @@
     "lint": "next lint",
     "heroku-postbuild": "npm run build",
     "test": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha test/*.js",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "vault": "node ./vault.js"
   },
   "eslintConfig": {
     "extends": [
@@ -63,6 +64,7 @@
     "postcss": "^8.3.6",
     "prettier": "^2.4.1",
     "tailwindcss": "^2.2.15",
-    "webpack-dev-server": "^4.3.1"
+    "webpack-dev-server": "^4.3.1",
+    "crypto-js": "^4.1.1"
   }
 }

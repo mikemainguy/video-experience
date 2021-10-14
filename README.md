@@ -10,6 +10,12 @@ First, create a .env file in root of project:
 - **PTabcdefghijklmnopqrstuvwxyznowiknowmyabcs12345678** API obtained from signalwire 
  
 You can create demo signalwire environments for local testing otherwise obtain shared dev env values from project team
+then .env file is stored in the project AES encrypted in the file 'file_vault'.  
+To decrypt this into your local .env file type the following command (replace password with the password used to encrypt)
+```bash
+npm run vault decrypt password
+```
+
 
 ```bash
 npm install
@@ -35,3 +41,10 @@ Navigate to [site](https://experience.aardvark.guru/)
 ## Documentation
 - [Signalwire client side SDK](https://developer.signalwire.com/client-sdk/docs)
 - [Signalwire server side APIs](https://developer.signalwire.com/apis/reference/overview)
+
+
+as things get added to .env you may need to reencrypt and commit/push updated key_vault  in the project.
+To encrypt your current .env run the following (also replacing password with the actual password)
+```bash
+npm run vault encrypt password
+```
