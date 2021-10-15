@@ -48,3 +48,6 @@ To encrypt your current .env run the following (also replacing password with the
 ```bash
 npm run vault encrypt password
 ```
+
+Private applications authenticate with Shopify through basic HTTP authentication, 
+using the URL format https://{apikey}:{password}@{hostname}/admin/api/{version}/{resource}.json

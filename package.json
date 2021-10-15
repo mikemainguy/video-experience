@@ -8,11 +8,9 @@
     "start": "next start -p $PORT",
     "lint": "next lint",
     "heroku-postbuild": "npm run build",
-    "test": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha test/*.js",
-    "cypress:open": "cypress open",
-    "vault": "node ./vault.js",
     "test": "jest",
     "cypress:open": "cypress open",
+    "vault": "node ./vault.js",
     "coverage": "npm run test"
   },
   "eslintConfig": {
@@ -29,6 +27,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@reduxjs/toolkit": "^1.6.1",
+    "@shopify/shopify-api": "^1.4.1",
     "@signalwire/js": "^3.2.1",
     "@tailwindcss/forms": "^0.3.3",
     "axios": "^0.21.4",
@@ -72,12 +71,13 @@
     "prettier": "^2.4.1",
     "tailwindcss": "^2.2.15",
     "webpack-dev-server": "^4.3.1",
-    "crypto-js": "^4.1.1",
-    "webpack-dev-server": "^4.3.1"
+    "crypto-js": "^4.1.1"
   },
-  "env":{
+  "env": {
     "test": {
-      "plugins": ["istanbul"]
+      "plugins": [
+        "istanbul"
+      ]
     }
   }
 }
